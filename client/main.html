@@ -1,0 +1,31 @@
+<head>
+  <title>Parthiban Loganathan</title>
+</head>
+
+<body>
+  {{> intro}}
+
+  {{> navigation}}
+
+  {{> work_experience}}
+</body>
+
+<template name="intro" id="intro">
+  <h1 id="salutation">Hi there, I'm Parthi</h1>
+  <p id="description">Software Developer at Columbia</p>
+</template>
+
+<template name="navigation" id="navigation">
+
+</template>
+
+<template name="work_experience" id="work_experience">
+<h3>Work Experience</h3>
+{{#each jobs}}
+  <div class="job">
+<!--    <img src={{}}>-->
+    <p>{{company}}</p>
+    <p>{{position}}</p>
+  </div>
+{{/each}}
+</template>

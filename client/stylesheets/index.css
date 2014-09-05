@@ -1,0 +1,22 @@
+body {
+  background: black;
+  color: white;
+  font-family: 'Droid Sans', sans-serif;
+  text-align: center;
+}
+
+#intro {
+  text-align: center;
+}
+
+#salutation {
+  font-family: 'Josefin Slab', serif;
+  text-align: center;
+  font-size: 500%;
+  line-height: 150%
+}
+
+#description {
+  text-align: center;
+  font-size: 170%;
+}
