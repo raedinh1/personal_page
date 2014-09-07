@@ -20,3 +20,11 @@ body {
   text-align: center;
   font-size: 170%;
 }
+
+.company-image {
+  width: 270px;
+  height: 270px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+}
