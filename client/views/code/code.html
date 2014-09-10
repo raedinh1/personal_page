@@ -1,0 +1,10 @@
+<template name="code" id="code">
+  <h3>Code</h3>
+  {{#each projects}}
+  <div class="project">
+    <a href="{{url}}"><img class="project-image" src={{image}}></a>
+    <p>{{name}}</p>
+    <p>{{description}}</p>
+  </div>
+  {{/each}}
+</template>
