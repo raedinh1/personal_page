@@ -1,0 +1,20 @@
+{
+  "name": "personal_page_v2",
+  "description": "Personal Page v 2.0 ===================",
+  "main": "index.js",
+  "authors": [
+    "Parthiban Loganathan <parthibanloganathan@users.noreply.github.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/parthibanloganathan/personal_page_v2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typed.js": "^1.1.1"
+  }
+}
