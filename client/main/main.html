@@ -1,15 +1,52 @@
 <head>
-  <title>Parthiban Loganathan</title>
+  <title></title>
 </head>
 
 <body>
-  {{> intro}}
+  {{> main}}
 </body>
 
+<template name="main">
+  {{> intro}}
+  {{> navigation}}
+</template>
+
 <template name="intro">
-  Hi, I'm Parthi. I <span class="element"></span>
+  Hi, I'm {{owner.name}}. I <span class="insert_typed"></span>
 </template>
 
 <template name="navigation">
+  <ul class="nav nav-pills">
 
+    <li role="presentation">
+      <a href="/projects">
+        <i class="fa fa-wrench" aria-hidden="true"></i>      
+      </a>
+    </li>    
+
+    <li role="presentation">
+      <a href="{{owner.email}}">
+        <i class="fa fa-envelope" aria-hidden="true"></i>      
+      </a>
+    </li>    
+
+    <li role="presentation">
+      <a href="{{owner.github}}">
+        <i class="fa fa-github" aria-hidden="true"></i>      
+      </a>
+    </li>    
+
+    <li role="presentation">
+      <a href="{{owner.twitter}}">
+        <i class="fa fa-twitter" aria-hidden="true"></i>      
+      </a>
+    </li>    
+
+    <li role="presentation">
+      <a href="{{owner.linkedin}}">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>      
+      </a>
+    </li>
+
+  </ul>
 </template>

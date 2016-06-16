@@ -1,9 +1,16 @@
 Template.intro.onRendered = function () {
   alert("rendered");
+  console.log("rendered");
   $(function(){
-    $(".element").typed({
-      strings: ["study Computer Science at Columbia.", "am a Managing Partner at Dorm Room Fund", "will be an Associate Product Manager at Google", "build tech communities at ADI"],
+    $(".insert_typed").typed({
+      strings: ["studied Computer Science at Columbia", "was a Managing Partner at Dorm Room Fund", "will be an Associate Product Manager at Google"],
       typeSpeed: 0
     });
   });
 };
+
+Template.navigation.helpers({
+  'owner' : function () {
+    return owner;
+  }
+});
