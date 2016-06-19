@@ -1,5 +1,5 @@
 <template name="Home">
-  <div class="row r1 text-center">
+  <div class="row top-offset text-center">
     <div class="col-md-12">
       {{> intro}}
     </div>
@@ -12,6 +12,8 @@
 </template>
 
 <template name="intro">
+  <img src="{{owner.image}}" class="img-circle profile-pic">
+  <br>
   <h1>Hi, I'm {{owner.name}}.
   <br>
   I <span class="insert_typed"></span>
@@ -20,34 +22,33 @@
 
 <template name="navigation">
   <ul class="nav nav-pills">
-
     <li role="presentation">
       <a href="/projects">
-        <i class="fa fa-wrench fa-5x" aria-hidden="true"></i>      
+        <i class="fa fa-wrench fa-4x" aria-hidden="true"></i>      
       </a>
     </li>    
 
     <li role="presentation">
       <a href="{{owner.email}}">
-        <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>      
+        <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>      
       </a>
     </li>    
 
     <li role="presentation">
       <a href="{{owner.github}}">
-        <i class="fa fa-github fa-5x" aria-hidden="true"></i>      
+        <i class="fa fa-github fa-4x" aria-hidden="true"></i>      
       </a>
     </li>    
 
     <li role="presentation">
       <a href="{{owner.twitter}}">
-        <i class="fa fa-twitter fa-5x" aria-hidden="true"></i>      
+        <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>      
       </a>
     </li>    
 
     <li role="presentation">
       <a href="{{owner.linkedin}}">
-        <i class="fa fa-linkedin fa-5x" aria-hidden="true"></i>      
+        <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>      
       </a>
     </li>
 
