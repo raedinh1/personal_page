@@ -3,11 +3,17 @@ Template.intro.onRendered = function () {
   console.log("rendered");
   $(function(){
     $(".insert_typed").typed({
-      strings: ["studied Computer Science at Columbia", "was a Managing Partner at Dorm Room Fund", "will be an Associate Product Manager at Google"],
+      strings: descriptions,
       typeSpeed: 0
     });
   });
 };
+
+Template.intro.helpers({
+  'owner' : function () {
+    return owner;
+  }
+});
 
 Template.navigation.helpers({
   'owner' : function () {

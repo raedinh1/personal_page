@@ -7,9 +7,9 @@ standard-app-packages
 autopublish
 insecure
 jquery
-bootstrap
 
 standard-minifier-css
 standard-minifier-js
 fortawesome:fontawesome
 iron:router
+twbs:bootstrap
