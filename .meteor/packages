@@ -4,8 +4,6 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-autopublish
-insecure
 jquery
 
 standard-minifier-css
@@ -13,3 +11,5 @@ standard-minifier-js
 fortawesome:fontawesome
 iron:router
 twbs:bootstrap
+chrisbutler:typed.js
+altapp:recaptcha

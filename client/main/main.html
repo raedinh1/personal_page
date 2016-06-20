@@ -1,7 +1,10 @@
 <template name="Home">
   <div class="row top-offset text-center">
     <div class="col-md-12">
+      {{> myself}}
+      <br>
       {{> intro}}
+      <br><br>
     </div>
   </div>
   <div class="row">
@@ -11,46 +14,96 @@
   </div>
 </template>
 
-<template name="intro">
+<template name="Home_No_Intro">
+  <div class="row top-offset text-center">
+    <div class="col-md-12">
+      {{> myself}}
+      <br><br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{> navigation}}
+    </div>
+  </div>
+</template>
+
+<template name="myself">
   <img src="{{owner.image}}" class="img-circle profile-pic">
   <br>
-  <h1>Hi, I'm {{owner.name}}.
-  <br>
-  I <span class="insert_typed"></span>
-  </h1>
+  <h1>Hi, I'm <b>{{owner.name}}</b>.</h1>
+</template>
+
+<template name="intro">
+  <h2><span class="insert_typed"></span></h2>
 </template>
 
 <template name="navigation">
+  {{> recaptcha}}
+  
   <ul class="nav nav-pills">
     <li role="presentation">
-      <a href="/projects">
-        <i class="fa fa-wrench fa-4x" aria-hidden="true"></i>      
+      {{#if is_project}}
+      <a href="/">
+        <i class="fa fa-home fa-3x" aria-hidden="true" title="Home"></i>      
       </a>
+      {{else}}
+      <a href="/projects">
+        <i class="fa fa-wrench fa-3x" aria-hidden="true" title="Projects"></i>      
+      </a>
+      {{/if}}
     </li>    
 
     <li role="presentation">
-      <a href="{{owner.email}}">
-        <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>      
+      <a data-toggle="modal" href="#requestEmailModal">
+        <i class="fa fa-envelope fa-3x" aria-hidden="true" title="Email"></i>
       </a>
-    </li>    
+    </li>
 
     <li role="presentation">
       <a href="{{owner.github}}">
-        <i class="fa fa-github fa-4x" aria-hidden="true"></i>      
+        <i class="fa fa-github fa-3x" aria-hidden="true" title="GitHub"></i>      
       </a>
     </li>    
 
     <li role="presentation">
       <a href="{{owner.twitter}}">
-        <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>      
+        <i class="fa fa-twitter fa-3x" aria-hidden="true" title="Twitter"></i>      
       </a>
     </li>    
 
     <li role="presentation">
       <a href="{{owner.linkedin}}">
-        <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>      
+        <i class="fa fa-linkedin fa-3x" aria-hidden="true" title="LinkedIn"></i>      
       </a>
     </li>
-
   </ul>
+</template>
+
+<template name="recaptcha">
+  <div class="modal fade" id="requestEmailModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content text-center">
+        <form class="email_request_form">
+          <label>Complete this recaptcha and submit a request for my email address. Just wanna make sure you're not a bot.</label>
+          <div class="recaptcha">
+            {{> reCAPTCHA}}
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="displayEmailModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content text-center">
+        Yup, you're human alright. Or a very smart robot. You can contact me at:
+        <br><br>
+        <a href="mailto:{{email}}">{{email}}</a>
+        <br><br>
+        I look forward to hearing from you!
+      </div>
+    </div>
+  </div>
 </template>
