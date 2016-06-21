@@ -2,8 +2,8 @@
   margin: 5px 0 5px 0;
 }
 
-.project a {
-  text-decoration: none;
+.projecta a, a:link, a:hover, a:active, a:visited {
+  text-decoration:none;
 }
 
 .project .image {

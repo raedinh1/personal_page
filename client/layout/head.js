@@ -1,12 +1,12 @@
 Meteor.startup(function() {
   if (Meteor.isClient) {
     return SEO.config({
-      title: 'Coffee at Columbia',
+      title: 'Parthiban Loganathan',
       meta: {
-        'description': 'Grab coffee with Columbia students. Make friends, get mentors, help underclassmen in the Columbia community.'
+        'description': "Parthi's node on the world wide web."
       },
       og: {
-        'title': 'Coffee at Columbia'
+        'title': 'Parthiban Loganathan'
       }
     });
   }

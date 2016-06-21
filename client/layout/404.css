@@ -1,9 +1,10 @@
-.notfound {
-  margin-top: 50px;
+.message404 {
+  padding: 25px;
+  margin: 100px 0 420px 0;
+  color: white;
+  background-color: rgba(0,0,0,0.7);
 }
 
-.notfound .image {
-  margin-top: 100px;
-  margin: auto;
-  size: 500px;
+#player404 {
+  pointer-events: none;
 }

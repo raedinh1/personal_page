@@ -1,6 +1,6 @@
 Router.configure({
   layoutTemplate: 'ApplicationLayout',
-  notFoundTemplate: '404'
+  notFoundTemplate: 'error404'
 });
 
 Router.route('/', function () {
