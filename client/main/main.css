@@ -1,13 +1,23 @@
 body {
-  font-family: 'Muli', sans-serif;  
+  font-family: 'Muli', sans-serif;
+  background-color: #FFFFFF;
 }
 
 .top-offset {
   margin-top: 150px;
 }
 
+.intro_statement {
+  color: black;
+}
+
+.name {
+  color: black;
+}
+
 .insert_typed {
   font-family: 'Inconsolata', monospace;
+  color: #5C5C5C;
 }
 
 .profile-pic {

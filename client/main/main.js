@@ -2,8 +2,8 @@ Template.Home.rendered = function () {
   $(function(){
     $(".insert_typed").typed({
       strings: typed_statements,
-      typeSpeed: 30,
-      backSpeed: -25,
+      typeSpeed: 20,
+      backSpeed: -27,
       backDelay: 2000,
       cursorChar: '|',
       loop: true,
