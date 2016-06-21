@@ -22,12 +22,13 @@ body {
 
 .nav a {
   color: #636363;
+  transition: color 1s ease;  
   text-decoration: none;
 }
 
 .nav a:hover, a:focus {
   color: #2E2E2E;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
