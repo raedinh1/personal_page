@@ -16,7 +16,7 @@ Template.error404.rendered = function () {
       videoId: '_hf6ke1-i3E',
       playerVars: {
         autoplay: 1,
-        start: 63,
+        start: 90,
         controls: 0,
         loop: 1,
         showinfo: 0,
