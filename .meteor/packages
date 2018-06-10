@@ -6,11 +6,13 @@
 standard-app-packages
 jquery
 
-standard-minifier-css
-standard-minifier-js
+standard-minifier-css@1.4.1
+standard-minifier-js@2.3.4
 fortawesome:fontawesome
 iron:router
 twbs:bootstrap
 chrisbutler:typed.js
 altapp:recaptcha
 manuelschoebel:ms-seo
+shell-server
+dynamic-import

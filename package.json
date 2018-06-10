@@ -1,0 +1,25 @@
+{
+  "name": "personal_page_v2",
+  "version": "1.0.0",
+  "description": "Personal Page v2 ================ My personal website.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parthibanloganathan/personal_page_v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parthibanloganathan/personal_page_v2/issues"
+  },
+  "homepage": "https://github.com/parthibanloganathan/personal_page_v2#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.49"
+  }
+}
