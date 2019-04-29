@@ -1,11 +1,11 @@
 Meteor.startup(function() {
   return SEO.config({
-    title: 'Parthiban Loganathan',
+    title: 'Parthi Loganathan',
     meta: {
-      'description': "Parthiban Loganathan. Welcome to Parthi's node on the world wide web. Currently working on product at Google. Studied Computer Science at Columbia."
+      'description': "Parthi Loganathan. Welcome to Parthi's node on the world wide web. Currently working on product at Google. Studied Computer Science at Columbia."
     },
     og: {
-      'title': 'Parthiban Loganathan'
+      'title': 'Parthi Loganathan'
     }
   });
 });
