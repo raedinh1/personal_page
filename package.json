@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/parthibanloganathan/personal_page_v2#readme",
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.49"
+    "@babel/runtime": "^7.4.4"
   }
 }
