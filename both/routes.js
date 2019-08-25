@@ -7,6 +7,6 @@ Router.route('/', function () {
   this.render('Home');
 });
 
-Router.route('/projects', function () {
-  this.render('Projects');
+Router.route('/writing', function () {
+  this.render('Writing');
 });

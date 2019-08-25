@@ -1,7 +1,7 @@
 {
-  "name": "personal_page_v2",
+  "name": "personal_page",
   "version": "1.0.0",
-  "description": "Personal Page v2 ================ My personal website.",
+  "description": "Personal Page ================ My personal website.",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/parthibanloganathan/personal_page_v2#readme",
   "dependencies": {
-    "@babel/runtime": "^7.4.4"
+    "@babel/runtime": "^7.5.5"
   }
 }
